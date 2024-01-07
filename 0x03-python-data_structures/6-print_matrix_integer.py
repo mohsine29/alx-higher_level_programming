@@ -4,3 +4,5 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             print(j, end=" ")
         print("$")
+    print("--$")
+    print("$")
