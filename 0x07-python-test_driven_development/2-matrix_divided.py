@@ -3,14 +3,14 @@ def matrix_divided(matrix, div):
     """"Divides all elements of a matrix.
 
     Args:
-        matrix: The matrix
+        matrix: A list of lists of ints or floats.
         div(int or float): The divisor
 
     Raises:
-        TypeError: if matrix is a not list of lists of integers or floats,
-                    or matrix not of the same size,
-                    or div is not n integer or float.
-        ZeroDivisionError: if div equal to 0
+        TypeError: if matrix is a not list of lists of integers or floats.
+        TypeErroe: if matrix not of the same size.
+        TypeError: if div is not n integer or float.
+        ZeroDivisionError: if div is equal to 0
 
     Returns: new matrix.
     """
