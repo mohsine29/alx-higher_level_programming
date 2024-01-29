@@ -29,14 +29,14 @@ class Rectangle:
         self.__width = value
 
     @property
-    def heigth(self):
-        """Get/set the current heigth of the rectangle."""
-        return (self.__heigth)
+    def height(self):
+        """Get/set the current height of the rectangle."""
+        return (self.__height)
 
-    @heigth.setter
-    def heigth(self, value):
+    @height.setter
+    def height(self, value):
         if type(value) is not int:
-            raise TypeError("heigth must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("heigth must be >= 0")
-        self.__heigth = value
+            raise ValueError("height must be >= 0")
+        self.__height = value
