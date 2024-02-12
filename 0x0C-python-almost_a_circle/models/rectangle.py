@@ -124,5 +124,5 @@ class Rectangle(Base):
     def to_dictionary(self):
         """ Dictionary of rectangle """
         recdic = {"id": self.id, "width": self.width, "height": self.height,
-                    "x": self.x, "y": self.y}
+                        "x": self.x, "y": self.y}
         return recdic
