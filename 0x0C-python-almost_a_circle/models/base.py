@@ -79,15 +79,14 @@ class Base():
     def load_from_file(cls):
         """Returns list of instances"""
         filenamee = cls.__name__ + ".json"
-        l = []
+        lst = []
         try:
             with open(filenamee, "r") as f:
                 instances = cls.from_json_string(f.read())
             for i, dic in enumerate(instances):
-                l.append(cls.create(**instances[i]))
-        except:
-            pass
-        return l
+                lst.append(cls.create(**instances[i]))
+        except IOError:
+            return lst
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
