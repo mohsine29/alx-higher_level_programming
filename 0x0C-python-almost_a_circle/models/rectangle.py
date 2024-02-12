@@ -93,16 +93,18 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ args Rectangle """
-        if len(args):
-            for i, j in enumerate(args):
-                if i == 0:
-                    self.id = j
-                elif i == 1:
-                    self.width = j
-                elif i == 3:
-                    self.x = j
-                elif i == 4:
-                    self.y = j
+        if args:
+            for k, v in enumerate(args):
+                if k == 0:
+                    self.id = v
+                elif k == 1:
+                    self.width = v
+                elif k == 2:
+                    self.height = v
+                elif k == 3:
+                    self.x = v
+                else:
+                    self.y = v
         else:
             if "id" in kwargs:
                 self.id = kwargs["id"]
