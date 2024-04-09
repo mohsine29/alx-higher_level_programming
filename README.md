@@ -1,1 +1,1 @@
-This repository is for ALX Python projects
+0x13-javascript_objects_scopes_closures
