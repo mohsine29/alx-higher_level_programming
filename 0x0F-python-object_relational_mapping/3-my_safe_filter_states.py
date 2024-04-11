@@ -25,7 +25,7 @@ if __name__ == '__main__':
             SELECT
                 *
             FROM
-                states                                                                                                             
+                states
             WHERE
                 name LIKE BINARY %(name)s
             ORDER BY
@@ -35,8 +35,6 @@ if __name__ == '__main__':
         })
 
         rows = cur.fetchall()
-
-                                                                                                                                                                        
     if rows is not None:
         for row in rows:
             print(row)
